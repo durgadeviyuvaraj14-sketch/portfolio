@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Durga Devi Yuvaraj | AI Security, SOC & GRC Analyst</title>
+<meta name="description" content="Portfolio of Durga Devi Yuvaraj: aspiring AI Security, SOC and GRC analyst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { ink:'#0B0F19', cyan2:'#22D3EE', indigo2:'#818CF8' },
+  fontFamily: { display:['"Bricolage Grotesque"','sans-serif'], sans:['"Instrument Sans"','system-ui','sans-serif'] }
+}}};
+</script>
+<style>
+  body{background:#0B0F19;color:#CBD5E1;font-family:"Instrument Sans",system-ui,sans-serif}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:radial-gradient(600px 400px at 85% 5%,rgba(34,211,238,.10),transparent 70%),radial-gradient(700px 500px at 5% 40%,rgba(129,140,248,.09),transparent 70%)}
+  h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;color:#F1F5F9}
+  .glass{background:rgba(255,255,255,.035);border:1px solid rgba(148,163,184,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:1rem}
+  .lift{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+  .lift:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.45);box-shadow:0 12px 30px -12px rgba(34,211,238,.25)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.1rem;border-radius:.7rem;font-weight:600;font-size:.9rem;transition:all .2s}
+  .btn-primary{background:linear-gradient(135deg,#22D3EE,#818CF8);color:#0B0F19}
+  .btn-primary:hover{filter:brightness(1.1);transform:translateY(-2px)}
+  .btn-ghost{border:1px solid rgba(148,163,184,.3);color:#E2E8F0}
+  .btn-ghost:hover{border-color:#22D3EE;color:#22D3EE}
+  .chip{display:inline-block;padding:.2rem .65rem;border-radius:999px;font-size:.78rem;border:1px solid rgba(129,140,248,.35);color:#C7D2FE;background:rgba(129,140,248,.08)}
+  .filter{padding:.4rem .95rem;border-radius:999px;font-size:.85rem;border:1px solid rgba(148,163,184,.25);color:#94A3B8;transition:all .2s}
+  .filter:hover{color:#E2E8F0}
+  .filter.active{background:rgba(34,211,238,.14);border-color:#22D3EE;color:#67E8F9}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  :focus-visible{outline:2px solid #22D3EE;outline-offset:3px;border-radius:.4rem}
+  .tl{border-left:1px solid rgba(148,163,184,.25)}
+  .tl-dot{position:absolute;left:-6px;top:1.6rem;width:11px;height:11px;border-radius:50%;background:#22D3EE;box-shadow:0 0 0 4px rgba(34,211,238,.18)}
+  .cursor{display:inline-block;width:.55ch;height:1.1em;background:#22D3EE;vertical-align:-.15em;animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.lift,.btn{transition:none}.cursor{animation:none}html{scroll-behavior:auto}}
+  section{scroll-margin-top:5rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-40 border-b border-slate-700/40 bg-[#0B0F19]/80 backdrop-blur">
+  <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between" aria-label="Main">
+    <a href="#home" class="font-display font-bold text-slate-100 text-lg" id="navName"></a>
+    <ul id="navLinks" class="hidden md:flex gap-6 text-sm"></ul>
+    <button id="menuBtn" class="md:hidden p-2 text-slate-200" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </nav>
+  <ul id="mobileNav" class="hidden md:hidden px-5 pb-4 space-y-3 text-sm border-t border-slate-700/40 pt-3"></ul>
+</header>
+
+<main class="max-w-6xl mx-auto px-5">
+  <!-- HERO -->
+  <section id="home" class="pt-32 pb-20 grid lg:grid-cols-5 gap-10 items-center">
+    <div class="lg:col-span-3">
+      <h1 id="heroName" class="text-5xl sm:text-6xl font-bold leading-[1.05] tracking-tight"></h1>
+      <p id="heroHeadline" class="mt-5 text-xl text-cyan-300 font-medium"></p>
+      <p id="heroSub" class="mt-2 text-slate-400 max-w-xl"></p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#projects" class="btn btn-primary"><i data-lucide="folder-git-2" class="w-4 h-4"></i>Explore Projects</a>
+        <a href="#certifications" class="btn btn-ghost"><i data-lucide="award" class="w-4 h-4"></i>View Credentials</a>
+      </div>
+      <div id="heroSocials" class="mt-6 flex gap-3"></div>
+    </div>
+    <div class="lg:col-span-2 glass p-5 font-mono text-[13px] leading-7" aria-hidden="true">
+      <div class="flex gap-1.5 mb-3"><span class="w-3 h-3 rounded-full bg-slate-600"></span><span class="w-3 h-3 rounded-full bg-slate-600"></span><span class="w-3 h-3 rounded-full bg-slate-600"></span></div>
+      <div id="terminal" class="text-slate-300"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-8">Experience and leadership</h2>
+    <div id="expList" class="tl ml-2 space-y-6"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-5">Featured projects</h2>
+    <div id="projectFilters" class="flex flex-wrap gap-2 mb-6"></div>
+    <div id="projectGrid" class="grid md:grid-cols-2 gap-5"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-8">Technical skills</h2>
+    <div id="skillGrid" class="grid md:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-5">Certifications and benchmarks</h2>
+    <div id="certFilters" class="flex flex-wrap gap-2 mb-6"></div>
+    <div id="certGrid" class="grid md:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- ACADEMIC -->
+  <section id="education" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-8">Academic record</h2>
+    <div id="eduWrap" class="grid md:grid-cols-2 gap-5"></div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages" class="py-16 reveal">
+    <h2 class="text-3xl font-bold mb-8">Languages</h2>
+    <div id="langWrap" class="grid md:grid-cols-2 gap-5"></div>
+  </section>
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact" class="border-t border-slate-700/40 mt-10">
+  <div class="max-w-6xl mx-auto px-5 py-14 text-center">
+    <h2 class="text-3xl font-bold">Let’s work together</h2>
+    <p class="mt-3 text-slate-400">Open to internships and opportunities in AI security, SOC and GRC.</p>
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <button id="copyEmail" class="btn btn-primary"><i data-lucide="copy" class="w-4 h-4"></i><span id="emailText"></span></button>
+      <a id="mailLink" class="btn btn-ghost"><i data-lucide="mail" class="w-4 h-4"></i>Send email</a>
+    </div>
+    <div id="footSocials" class="mt-6 flex justify-center gap-3"></div>
+    <p id="copy" class="mt-10 text-xs text-slate-500"></p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="glass bg-[#0F1524] w-full max-w-lg max-h-[85vh] overflow-y-auto p-6 relative">
+    <button id="mClose" class="absolute top-4 right-4 text-slate-400 hover:text-white" aria-label="Close"><i data-lucide="x"></i></button>
+    <h3 id="mTitle" class="text-2xl font-bold pr-8"></h3>
+    <p id="mMeta" class="text-sm text-cyan-300 mt-1"></p>
+    <div id="mBody" class="mt-4 space-y-3 text-sm text-slate-300"></div>
+    <div id="mTags" class="mt-4 flex flex-wrap gap-2"></div>
+    <div id="mAction" class="mt-5"></div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-lg bg-slate-800 border border-cyan-400/40 text-sm text-cyan-200 opacity-0 pointer-events-none transition-opacity" role="status"></div>
+
+<script>
+/* ==========================================================================
+   portfolioData: EDIT EVERYTHING HERE. The page renders itself from this object.
+   To add something new, copy an existing item in an array and change its values.
+   ========================================================================== */
+const portfolioData = {
+  personal: {
+    name: "Durga Devi Yuvaraj",
+    headline: "B.E. CSE (Cyber Security) | Aspiring AI Security, SOC & GRC Analyst",
+    subHeadline: "Google Gemini Student Ambassador | Cyber Security Intern at Sri Sairam Techno Incubator",
+    email: "durgadeviyuvaraj14@gmail.com",
+    linkedin: "https://www.linkedin.com/in/durga-devi-yuvaraj-72051a380/",
+    github: "https://github.com/durgadeviyuvaraj14-sketch"
+  },
+
+  // ---- EXPERIENCE: add a new object to add a new timeline card ----
+  experience: [
+    { role: "Google Gemini Student Ambassador", org: "Communique India", period: "May 2026 – Present",
+      summary: "Representing Google student initiatives on campus, driving peer engagement, technical demos and AI literacy across departments.",
+      details: ["Run technical demos of Gemini tools for students across departments.", "Build peer engagement around AI literacy on campus."] },
+    { role: "Cyber Security Intern", org: "Sri Sairam Techno Incubator", period: "Present",
+      summary: "Collaborating on incubation center technical projects focused on network monitoring, web application security (OWASP) and Linux server operations.",
+      details: ["Network monitoring.", "Web application security following OWASP.", "Linux server operations."] }
+  ],
+
+  // ---- PROJECTS: add a new object for a new project. "categories" drive the filter buttons ----
+  projects: [
+    { title: "UNMORPH SENTINEL", subtitle: "AI-Powered Cybersecurity Project", period: "Jun 2026 – Present",
+      categories: ["Cybersecurity", "AI"],
+      tags: ["Cybersecurity", "Gen AI", "Google AI Studio", "Digital Evidence Management"],
+      summary: "AI-assisted cyber-incident documentation platform helping users organize digital evidence, build incident timelines, analyze reported events, and generate structured case reports with cybercrime reporting guidance. Built as a functional web prototype using Google AI Studio.",
+      link: "https://unmorph-sentinel.ai.studio/", linkText: "Open prototype" }, // built with Google AI Studio
+    { title: "Event Management System", subtitle: "Modular Java Application", period: "Mar 2026 – Apr 2026",
+      categories: ["Java"],
+      tags: ["Java", "Multithreading", "OOP", "VS Code"],
+      summary: "Modular, multi-threaded Java application utilizing clean package structures to handle real-time budget calculations and concurrent guest list tracking with proper resource synchronization and exception handling.",
+      link: "" },
+    // SECOND EVENT MANAGEMENT PROJECT: edit the dates and summary here if they differ
+    { title: "Event Management System (OOP)", subtitle: "Object-Oriented Java Application", period: "Mar 2026 – Apr 2026",
+      categories: ["Java"],
+      tags: ["Java", "OOP", "Exception Handling", "VS Code"],
+      summary: "Java event management application built on core Object-Oriented Programming principles, ensuring clean code separation, resource synchronization and exception handling.",
+      link: "" }
+  ],
+
+  // ---- SKILLS: add items to a list, or add a whole new category object ----
+  skills: [
+    { category: "Programming & Scripting", icon: "code-2", items: ["Python", "Java", "SQL (MySQL, Oracle SQL)", "Bash"] },
+    { category: "Security & Systems", icon: "shield-check", items: ["Linux CLI (Log Parsing, Permissions)", "TCP/IP", "OSI Model", "Wireshark", "Threat Detection Concepts", "OWASP Frameworks"] },
+    { category: "Developer Tools", icon: "wrench", items: ["VS Code", "Git/GitHub", "Linux Terminal", "Google AI Studio"] }
+  ],
+
+  // ---- CERTIFICATES: add a new object here for every new certificate ----
+  // Set "progress" to {done, total} to show a progress bar. Put the real credential URL in "link".
+  certificates: [
+    { title: "The Joy of Computing using Python", issuer: "NPTEL (IIT Madras)", categories: ["Programming"], date: "Jul – Oct 2026",
+      status: "Completed (Elite)", score: "80%", progress: null,
+      link: "certificates/NPTEL_-_Joy_of_computing.pdf", // PDF copy kept in the certificates folder
+      desc: "12-week NPTEL course from IIT Madras. Consolidated score 80% (Online Assignments 21.44/25, Proctored Exam 58.5/75). 4 credits recommended." },
+    { title: "Google Cybersecurity Professional Certificate", issuer: "Google / Coursera", categories: ["Cybersecurity"], date: "In progress",
+      status: "In progress", score: "", progress: { done: 5, total: 9 }, link: "", // <-- add the Coursera link when you finish
+      desc: "Professional certificate covering security fundamentals, network security, Linux, SQL and incident response." },
+    { title: "Cyber Security: Application of AI", issuer: "Macquarie University / Coursera", categories: ["Cybersecurity", "AI"], date: "Oct 18, 2026",
+      status: "Completed", score: "", progress: null, link: "https://coursera.org/verify/GRUPREOQNQVF",
+      desc: "Course on applying AI techniques to cyber security problems, offered by Macquarie University through Coursera." },
+    { title: "Introduction to Cybersecurity Tools & Cyberattacks", issuer: "IBM / Coursera", categories: ["Cybersecurity"], date: "Oct 18, 2026",
+      status: "Completed", score: "", progress: null, link: "https://coursera.org/verify/R0UKFOSBCNRM",
+      desc: "IBM course on core cybersecurity tools and common types of cyberattacks." },
+    { title: "Introduction to Computer Organization", issuer: "IIIT Hyderabad / Coursera", categories: ["Computer Science"], date: "Oct 5, 2026",
+      status: "Completed", score: "", progress: null, link: "https://coursera.org/verify/80BG91CY1AYD",
+      desc: "Course on how computer hardware is organized, from IIIT Hyderabad through Coursera." },
+    { title: "Oracle Database Foundations", issuer: "LearnQuest / Coursera", categories: ["Programming"], date: "Sep 20, 2026",
+      status: "Completed", score: "", progress: null, link: "https://coursera.org/verify/UABE7OVL629Z",
+      desc: "Foundations of Oracle databases and SQL, offered by LearnQuest through Coursera." },
+    { title: "Mindfulness, Dignity, and the Art of Human Connection", issuer: "University of Michigan / Coursera", categories: ["Personal Development"], date: "Oct 12, 2026",
+      status: "Completed", score: "", progress: null, link: "https://coursera.org/verify/JGX8Y3YYH9E9",
+      desc: "University of Michigan course on mindfulness, dignity and building human connection." },
+    { title: "OWASP Community & Technical Workshops", issuer: "OWASP", categories: ["Cybersecurity"], date: "",
+      status: "Participant / Volunteer", score: "", progress: null, link: "", // <-- add a link or proof if you have one
+      desc: "Participated in and volunteered at OWASP community events and technical workshops on web application security." }
+    // ,{ title: "NEW CERTIFICATE", issuer: "", categories: ["AI"], date: "", status: "Completed", score: "", progress: null, link: "", desc: "" }
+  ],
+
+  // ---- EDUCATION ----
+  education: {
+    university: { name: "Sri Sairam Engineering College", degree: "B.E. Computer Science & Engineering (Cyber Security)", status: "Currently pursuing | Chennai, Tamil Nadu", cgpa: "8.57 / 10.0",
+      // CGPA RECORDS: add a new line here after each semester or year
+      records: [
+        { label: "Semester 1", cgpa: "8.40" },
+        { label: "Semester 2", cgpa: "8.789" },
+        { label: "Year 1 overall", cgpa: "8.57" }
+      ] },
+    school: { name: "Vanavani Matriculation Higher Secondary School, IITM Campus", link: "https://vanavani.iitm.ac.in/",
+      marks: [
+        { level: "10th Grade", score: "455 / 500", percent: "91%" },
+        { level: "12th Grade", score: "459 / 600", percent: "76.5%" }
+      ] }
+  },
+
+  // ---- LANGUAGES ----
+  languages: [
+    { name: "English", level: "Professional Working Proficiency" },
+    { name: "Tamil", level: "Native / Bilingual Proficiency" }
+  ],
+  duolingo: {
+    xp: "102,244",         // update this number whenever you like
+    targets: ["Spanish", "French", "English"],
+    link: ""              // optional: your Duolingo profile URL
+  }
+};
+
+/* ============================ RENDERING (no edits needed below) ============================ */
+const D = portfolioData, P = D.personal, $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const chips = a => a.map(t => `<span class="chip">${esc(t)}</span>`).join(" ");
+const icon = n => `<i data-lucide="${n}" class="w-4 h-4"></i>`;
+
+// Nav + hero
+const sections = [["experience","Experience"],["projects","Projects"],["skills","Skills"],["certifications","Credentials"],["education","Education"],["languages","Languages"],["contact","Contact"]];
+document.title = `${P.name} | AI Security, SOC & GRC Analyst`;
+$("#navName").textContent = P.name;
+$("#heroName").textContent = P.name;
+$("#heroHeadline").textContent = P.headline;
+$("#heroSub").textContent = P.subHeadline;
+$("#navLinks").innerHTML = sections.map(([id,l]) => `<li><a class="text-slate-400 hover:text-cyan-300 transition" href="#${id}">${l}</a></li>`).join("");
+$("#mobileNav").innerHTML = sections.map(([id,l]) => `<li><a class="block text-slate-300" href="#${id}">${l}</a></li>`).join("");
+const socials = [["linkedin", P.linkedin, "LinkedIn"], ["github", P.github, "GitHub"], ["mail", "mailto:" + P.email, "Email"]];
+const socialHTML = socials.map(([i,u,l]) => `<a href="${esc(u)}" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="${l}">${icon(i)}${l}</a>`).join("");
+$("#heroSocials").innerHTML = socialHTML; $("#footSocials").innerHTML = socialHTML;
+$("#emailText").textContent = P.email; $("#mailLink").href = "mailto:" + P.email;
+$("#copy").textContent = `© ${new Date().getFullYear()} ${P.name}`;
+
+// Terminal card, built from the data above
+$("#terminal").innerHTML = [
+  `<span class="text-cyan-300">$</span> whoami`, esc(P.name.toLowerCase().replace(/ /g, "-")),
+  `<span class="text-cyan-300">$</span> cat focus.txt`, "ai-security, soc, grc",
+  `<span class="text-cyan-300">$</span> ls projects/`, D.projects.map(p => esc(p.title.toLowerCase().replace(/ /g, "-"))).join("<br>"),
+  `<span class="text-cyan-300">$</span> <span class="cursor"></span>`
+].join("<br>");
+
+// Experience
+$("#expList").innerHTML = D.experience.map((e, i) => `
+  <div class="relative pl-6"><span class="tl-dot"></span>
+    <button data-exp="${i}" class="glass lift p-5 text-left w-full">
+      <h3 class="text-xl font-semibold">${esc(e.role)}</h3>
+      <p class="text-cyan-300 text-sm mt-1">${esc(e.org)} | ${esc(e.period)}</p>
+      <p class="mt-3 text-slate-400">${esc(e.summary)}</p>
+    </button></div>`).join("");
+document.querySelectorAll("[data-exp]").forEach(b => b.onclick = () => {
+  const e = D.experience[b.dataset.exp];
+  openModal({ title: e.role, meta: `${e.org} | ${e.period}`, body: [e.summary, ...(e.details || [])] });
+});
+
+// Generic filter builder
+function filterBar(el, items, onPick) {
+  const cats = ["All", ...new Set(items.flatMap(i => i.categories))];
+  el.innerHTML = cats.map((c, i) => `<button class="filter ${i ? "" : "active"}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  el.querySelectorAll(".filter").forEach(b => b.onclick = () => {
+    el.querySelectorAll(".filter").forEach(x => x.classList.remove("active"));
+    b.classList.add("active"); onPick(b.dataset.c);
+  });
+}
+const match = (item, c) => c === "All" || item.categories.includes(c);
+
+// Projects
+function drawProjects(c = "All") {
+  $("#projectGrid").innerHTML = D.projects.map((p, i) => match(p, c) ? `
+    <button data-proj="${i}" class="glass lift p-6 text-left flex flex-col">
+      ${p.period ? `<p class="text-xs text-slate-500">${esc(p.period)}</p>` : ""}
+      <h3 class="text-xl font-semibold mt-1">${esc(p.title)}</h3>
+      <p class="text-cyan-300 text-sm">${esc(p.subtitle)}</p>
+      <p class="mt-3 text-slate-400 text-sm line-clamp-4">${esc(p.summary)}</p>
+      <div class="mt-4 flex flex-wrap gap-2">${chips(p.tags)}</div>
+    </button>` : "").join("");
+  document.querySelectorAll("[data-proj]").forEach(b => b.onclick = () => {
+    const p = D.projects[b.dataset.proj];
+    openModal({ title: p.title, meta: p.period ? `${p.subtitle} | ${p.period}` : p.subtitle, body: [p.summary], tags: p.tags, link: p.link, linkText: p.linkText || "Open project" });
+  });
+}
+filterBar($("#projectFilters"), D.projects, drawProjects); drawProjects();
+
+// Skills
+$("#skillGrid").innerHTML = D.skills.map(s => `
+  <div class="glass lift p-6">
+    <div class="flex items-center gap-2 text-cyan-300">${icon(s.icon)}<h3 class="text-lg font-semibold">${esc(s.category)}</h3></div>
+    <div class="mt-4 flex flex-wrap gap-2">${chips(s.items)}</div>
+  </div>`).join("");
+
+// Certificates
+function drawCerts(c = "All") {
+  $("#certGrid").innerHTML = D.certificates.map((x, i) => match(x, c) ? `
+    <div class="glass lift p-5 flex flex-col">
+      <button data-cert="${i}" class="text-left flex-1">
+        <p class="text-xs text-slate-500">${esc(x.issuer)}</p>
+        <h3 class="text-lg font-semibold mt-1">${esc(x.title)}</h3>
+        <p class="text-cyan-300 text-sm mt-2">${esc(x.status)}${x.score ? " | " + esc(x.score) : ""}</p>${x.date ? `<p class="text-xs text-slate-500 mt-1">${esc(x.date)}</p>` : ""}
+        ${x.progress ? `<div class="mt-3"><div class="h-2 rounded-full bg-slate-700 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-cyan-400 to-indigo-400" style="width:${x.progress.done / x.progress.total * 100}%"></div></div>
+        <p class="text-xs text-slate-400 mt-1">${x.progress.done}/${x.progress.total} courses completed</p></div>` : ""}
+      </button>
+      ${x.link ? `<a href="${esc(x.link)}" target="_blank" rel="noopener" class="btn btn-ghost mt-4 justify-center">${icon("external-link")}View Credential</a>`
+               : `<span class="btn btn-ghost mt-4 justify-center opacity-50 cursor-default">${icon("clock")}Link coming soon</span>`}
+    </div>` : "").join("");
+  document.querySelectorAll("[data-cert]").forEach(b => b.onclick = () => {
+    const x = D.certificates[b.dataset.cert];
+    openModal({ title: x.title, meta: `${x.issuer} | ${x.status}${x.score ? " | " + x.score : ""}${x.date ? " | " + x.date : ""}`, body: [x.desc], link: x.link, linkText: "View Credential" });
+  });
+  lucide.createIcons();
+}
+filterBar($("#certFilters"), D.certificates, drawCerts); drawCerts();
+
+// Education
+const E = D.education;
+$("#eduWrap").innerHTML = `
+  <div class="glass lift p-6">
+    <div class="flex items-center gap-2 text-cyan-300">${icon("graduation-cap")}<h3 class="text-lg font-semibold">University</h3></div>
+    <p class="mt-3 text-slate-100 font-medium">${esc(E.university.name)}</p>
+    <p class="text-slate-400 text-sm">${esc(E.university.degree)}</p>
+    <p class="text-slate-500 text-xs mt-1">${esc(E.university.status)}</p>
+    <p class="mt-4 text-3xl font-display font-bold text-slate-100">${esc(E.university.cgpa)} <span class="text-sm font-sans font-normal text-slate-400">CGPA</span></p>
+    <div class="mt-4 grid grid-cols-3 gap-2">${E.university.records.map(r => `
+      <div class="rounded-lg border border-slate-600/40 p-2"><p class="text-xs text-slate-400">${esc(r.label)}</p><p class="text-lg font-display font-bold text-slate-100">${esc(r.cgpa)}</p></div>`).join("")}</div>
+  </div>
+  <div class="glass lift p-6">
+    <div class="flex items-center gap-2 text-cyan-300">${icon("school")}<h3 class="text-lg font-semibold">School</h3></div>
+    <p class="mt-3 text-slate-100 font-medium">${esc(E.school.name)}</p>
+    <div class="mt-4 grid grid-cols-2 gap-3">${E.school.marks.map(m => `
+      <div class="rounded-lg border border-slate-600/40 p-3"><p class="text-xs text-slate-400">${esc(m.level)}</p><p class="text-2xl font-display font-bold text-slate-100">${esc(m.percent)}</p><p class="text-xs text-slate-400">${esc(m.score)}</p></div>`).join("")}</div>
+    ${E.school.link ? `<a href="${esc(E.school.link)}" target="_blank" rel="noopener" class="btn btn-ghost mt-4">${icon("external-link")}School website</a>` : ""}
+  </div>`;
+
+// Languages + Duolingo
+const du = D.duolingo;
+$("#langWrap").innerHTML = `
+  <div class="glass p-6 space-y-5">${D.languages.map(l => `
+    <div><h3 class="text-lg font-semibold">${esc(l.name)}</h3><p class="text-slate-400 text-sm">${esc(l.level)}</p></div>`).join("")}</div>
+  <div class="glass lift p-6">
+    <div class="flex items-center gap-2 text-cyan-300">${icon("flame")}<h3 class="text-lg font-semibold">Duolingo learning tracker</h3></div>
+    <div class="mt-4 rounded-lg border border-slate-600/40 p-3"><p class="text-xs text-slate-400">Total XP</p><p class="text-3xl font-display font-bold text-slate-100">${esc(du.xp)}</p></div>
+    <p class="mt-4 text-sm text-slate-400">Learning:</p>
+    <div class="mt-2 flex flex-wrap gap-2">${chips(du.targets)}</div>
+    ${du.link ? `<a href="${esc(du.link)}" target="_blank" rel="noopener" class="btn btn-ghost mt-4">${icon("external-link")}Duolingo profile</a>` : ""}
+  </div>`;
+
+// Modal
+const modal = $("#modal"); let lastFocus;
+function openModal({ title, meta, body = [], tags = [], link, linkText }) {
+  lastFocus = document.activeElement;
+  $("#mTitle").textContent = title; $("#mMeta").textContent = meta || "";
+  $("#mBody").innerHTML = body.map(b => `<p>${esc(b)}</p>`).join("");
+  $("#mTags").innerHTML = chips(tags);
+  $("#mAction").innerHTML = link ? `<a href="${esc(link)}" target="_blank" rel="noopener" class="btn btn-primary">${esc(linkText)}</a>` : "";
+  modal.classList.remove("hidden"); modal.classList.add("flex"); $("#mClose").focus();
+}
+function closeModal() { modal.classList.add("hidden"); modal.classList.remove("flex"); lastFocus && lastFocus.focus(); }
+$("#mClose").onclick = closeModal;
+modal.onclick = e => { if (e.target === modal) closeModal(); };
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal(); });
+
+// Mobile menu
+const mBtn = $("#menuBtn"), mNav = $("#mobileNav");
+mBtn.onclick = () => { const open = mNav.classList.toggle("hidden") === false; mBtn.setAttribute("aria-expanded", open); };
+mNav.onclick = e => { if (e.target.tagName === "A") { mNav.classList.add("hidden"); mBtn.setAttribute("aria-expanded", false); } };
+
+// Copy email + toast
+let tt;
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.style.opacity = 1; clearTimeout(tt); tt = setTimeout(() => t.style.opacity = 0, 2200); }
+$("#copyEmail").onclick = async () => {
+  try { await navigator.clipboard.writeText(P.email); toast("Email copied to clipboard"); }
+  catch { toast("Copy failed. Email: " + P.email); }
+};
+
+// Scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+lucide.createIcons();
+</script>
+</body>
+</html>
